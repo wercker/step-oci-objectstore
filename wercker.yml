@@ -41,7 +41,7 @@ build:
 
         - script:
             name: version
-            code: $WERCKER_ROOT/oci --version
+            code: $WERCKER_OUTPUT_DIR/oci --version
 
 dev:
   steps:
