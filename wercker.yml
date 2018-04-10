@@ -39,6 +39,7 @@ build:
                 cp run.sh $WERCKER_OUTPUT_DIR
                 cp step.yml $WERCKER_OUTPUT_DIR
                 cp LICENSE $WERCKER_OUTPUT_DIR
+                cp README.md $WERCKER_OUTPUT_DIR
 
         - script:
             name: version
