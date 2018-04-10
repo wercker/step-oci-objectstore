@@ -36,8 +36,9 @@ build:
             name: prepare output
             code: |
                 mv /tmp/ocicli/dist/oci $WERCKER_OUTPUT_DIR/oci
-                rm -rf $WERCKER_ROOT/.git
-                rm -f $WERCKER_ROOT/.gitignore
+                cp run.sh $WERCKER_OUTPUT_DIR
+                cp step.yml $WERCKER_OUTPUT_DIR
+                cp LICENSE $WERCKER_OUTPUT_DIR
 
         - script:
             name: version
