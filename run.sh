@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG_DIR=config${RANDOM}
+CONFIG_DIR="${HOME}/config${RANDOM}"
 CONFIG_FILE="$CONFIG_DIR/config"
 set_auth() {
   local key_file="$CONFIG_DIR/api_key.pem"
